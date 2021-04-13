@@ -67,23 +67,26 @@
     </div>
 
     <div class="hero-form">
-
       <div class="heading">
-        <div>
+        <!-- <div> -->
           <h2>Deploy your app in seconds.</h2>
-          <h2>Get started now.</h2>
-        </div>
+          <h2 class="blue">Get started now.</h2>
+        <!-- </div> -->
       </div>
 
       <form class="the-form" action="/thankyoupage.html">
-        <input type="email" name="email" placeholder="Email">
-        <input type="password" name="pw" placeholder="Password">
-        <input type="submit" name="submit" id="" value="Create your account">
-        <button><a href="#">Sign up with google</a></button>
+        <input required class="border-r" type="email" name="email" placeholder=" Email">
+        <input required class="border-r" type="password" name="pw" placeholder=" Password" minlength="10">
+        <input class="border-r blue-b" type="submit" name="submit" id="" value="Create your account">
+        <button class="border-r google-b">
+          <a class="google-b" href="#">
+            <img src="assets/img/googleG.svg" alt="google symbol"> 
+            <span>Sign up with google</span>
+          </a>
+        </button>
       </form>
 
       <p>By signing up you agree to the <a href="#">Terms of Service</a></p>
-    
     </div>
 
   </section>

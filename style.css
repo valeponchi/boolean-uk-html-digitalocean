@@ -72,7 +72,7 @@ header a:hover {
   padding: 50px 300px;
 
   display: grid;
-  grid-template-columns: 3fr 3fr;
+  grid-template-columns: 3.5fr 3fr;
   grid-gap: 50px;
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("assets/img/hero-background-lines.jpeg");
@@ -99,24 +99,91 @@ header a:hover {
 }
 
 .hero-form {
-  background-color: thistle;
+  background-color: #fff;
+  border-radius: 5px;
   display: grid;
-  /* place-items: center; */
-  grid-template-rows: 2fr 3fr 0.5fr;
-}
-
-.heading {
-  background-color: tomato;
-  display: grid;
+  grid-template-rows: 1fr 1.5fr 0.2fr;
   place-items: center;
 }
 
-.heading h2 {
+.heading {
+  display: grid;
   justify-items: center;
+  line-height: px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.heading .blue {
+  color: var(--custom-blue);
 }
 
 .the-form {
-  background-color: turquoise;
+  /* border: 2px solid red; */
+  padding: 10px 25px;
+
   display: grid;
+  grid-auto-rows: 40px;
+  grid-gap: 10px;
+}
+
+.border-r {
+  border-radius: 5px;
+}
+
+.blue-b {
+  background-color: var(--custom-blue);
+  color: #fff;
+  border: none;
+  font-weight: bold;
+}
+
+.blue-b:hover {
+  background-color: #fff ;
+  color:var(--custom-blue);
+  border: 2px solid var(--custom-blue);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.google-b {
+  background-color: #fff;
+  color: black;
+
+  text-decoration: none;
+  font-weight: bold;
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 30px 250px;
+  align-items: center;
+}
+
+.google-b span {
+  padding-right: 30px;
+}
+
+.google-b:hover a {
+  /* background-color: var(--custom-blue); */
+  color: black;
+}
+
+.google-b:hover {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+.the-form img {
+  width: 35px;
+  /* background-color: cyan; */
+}
+
+.hero-form p {
+  font-size: 0.8rem;
+  padding-bottom: 20px;
+}
+
+
+.hero-form a {
+  color: var(--custom-blue);
+  font-weight: bold;
 }
 
