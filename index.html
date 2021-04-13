@@ -7,6 +7,7 @@
   <title>DigitalOcean Clone</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="dropdown.css">
+  <link rel="stylesheet" href="media.css">
 </head>
 <body>
 
@@ -44,12 +45,48 @@
 
     <nav class="h-user-menu">
       <a class="mcs" href="#docs">Docs</a>
-      <a class="mcs" href="#support">Support</a>
+      <div class="dropdown">
+        <button class="item dropbtn mcs">Support &#9661;<i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#featured-topics">Featured Topics</a>
+          <a href="#get-helpful-resources">Get helpful resources</a>
+          <a href="#contact-support">Contact Support</a>
+        </div>
+      </div>
+      <!-- <a class="mcs" href="#support">Support</a> -->
       <a class="mcs" href="#login">Login</a>
-      <a class="mcs" href="#signin">Sign Up</a>
+      <a class="mcs signup" href="#signup">Sign Up</a>
     </nav>
 
   </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>The simplest cloud <br> platform for <br> developers & teams </h1>
+      <small>Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousand. </small>
+    </div>
+
+    <div class="hero-form">
+
+      <div class="heading">
+        <div>
+          <h2>Deploy your app in seconds.</h2>
+          <h2>Get started now.</h2>
+        </div>
+      </div>
+
+      <form class="the-form" action="/thankyoupage.html">
+        <input type="email" name="email" placeholder="Email">
+        <input type="password" name="pw" placeholder="Password">
+        <input type="submit" name="submit" id="" value="Create your account">
+        <button><a href="#">Sign up with google</a></button>
+      </form>
+
+      <p>By signing up you agree to the <a href="#">Terms of Service</a></p>
+    
+    </div>
+
+  </section>
   
 </body>
 </html>

@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  margin: 20px 50px;
+  margin: 20px 0px;
 
 }
 
@@ -51,6 +51,72 @@ header .h-user-menu {
 }
 
 
-header .h-user-menu a:hover {
+header a:hover {
   color:var(--custom-blue);
 }
+
+.h-user-menu .signup {
+  color: var(--custom-blue);
+  border: 2px solid var(--custom-blue);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.h-user-menu .signup:hover {
+  color: #fff;
+  background-color: var(--custom-blue);
+}
+
+/* HERO SECTION START____________________________ */
+.hero {
+  padding: 50px 300px;
+
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  grid-gap: 50px;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("assets/img/hero-background-lines.jpeg");
+  background-size: cover;
+}
+
+.hero-text {
+  display: grid;
+  grid-template-rows: 2fr 1.5fr;
+}
+
+.hero-text h1 {
+  /* background-color: tomato; */
+  padding-top: 20px;
+  font-size: 3rem;
+}
+
+.hero-text small {
+  /* background-color: yellow; */
+  padding-top: 20px;
+  line-height: 25px;
+
+  font-size: 1rem;
+}
+
+.hero-form {
+  background-color: thistle;
+  display: grid;
+  /* place-items: center; */
+  grid-template-rows: 2fr 3fr 0.5fr;
+}
+
+.heading {
+  background-color: tomato;
+  display: grid;
+  place-items: center;
+}
+
+.heading h2 {
+  justify-items: center;
+}
+
+.the-form {
+  background-color: turquoise;
+  display: grid;
+}
+
