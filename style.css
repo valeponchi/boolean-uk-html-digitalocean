@@ -12,7 +12,8 @@ html {
 
 body {
   margin: 20px 0px;
-
+  display: grid;
+  place-items: center;
 }
 
 /* HEADER________________________________________________ */
@@ -88,6 +89,8 @@ header a:hover {
   /* background-color: tomato; */
   padding-top: 20px;
   font-size: 3rem;
+  color: rgba(255, 255, 255, 0.836);
+
 }
 
 .hero-text small {
@@ -96,6 +99,7 @@ header a:hover {
   line-height: 25px;
 
   font-size: 1rem;
+  color: rgba(255, 255, 255, 0.836);
 }
 
 .hero-form {
