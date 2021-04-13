@@ -7,13 +7,14 @@
 
 html {
 --custom-blue: #006aff;
+--custom-grey: #5b6987;
+--custom-transp-grey: #5b69871a;
 
 }
 
 body {
   margin: 20px 0px;
   display: grid;
-  place-items: center;
 }
 
 /* HEADER________________________________________________ */
@@ -191,3 +192,53 @@ header a:hover {
   font-weight: bold;
 }
 
+/* PARTNERSHIP SECTION______________________________ */
+.partnerships {
+  background-color: var(--custom-transp-grey);
+  display: grid;
+  place-items: center;
+}
+
+.partnerships h3 {
+  /* background-color: cornflowerblue; */
+  padding: 40px 0;
+
+  font-size: 1rem;
+  color: var(--custom-grey);
+
+  display: grid;
+  justify-items: center;
+}
+
+.partnerships .partners {
+  /* background-color: crimson; */
+  margin-bottom: 30px;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.partnerships .partners img {
+  width: 180px;
+  /* background-color: darkorchid; */
+}
+
+.partnerships .partners p {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.partnerships .partners p span {
+  color: rgb(73, 150, 73);
+}
+
+.partnerships a {
+  color: var(--custom-blue);
+  margin-bottom: 40px;
+  font-size: 0.8rem;
+  font-weight: bold;
+
+  display: grid;
+  justify-items: center;
+}
