@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+--custom-blue: #006aff;
+
+}
+
+body {
+  margin: 20px 50px;
+
+}
+
+/* HEADER________________________________________________ */
+/* dropdown buttons style in -> dropdown.css  */
+
+header {
+  height: 50px;
+  /* background-color: yellow; */
+
+  display: grid;
+  grid-template-columns: 2fr 2fr 3fr;
+  place-items: center;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header h-logo {
+}
+
+header .h-logo img{
+  width: 200px;
+}
+
+
+.mcs {
+  margin-left: 15px;
+  color: black;
+  font-size: 0.9rem;
+}
+
+
+header .h-user-menu {
+  color: black;
+}
+
+
+header .h-user-menu a:hover {
+  color:var(--custom-blue);
+}
