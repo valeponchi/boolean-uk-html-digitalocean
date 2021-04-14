@@ -9,6 +9,7 @@ html {
 --custom-blue: #006aff;
 --custom-grey: #5b6987;
 --custom-transp-grey: #5b69871a;
+--custom-dark-grey: rgb(54, 53, 53)
 
 }
 
@@ -43,13 +44,13 @@ header .h-logo img{
 
 .mcs {
   margin-left: 15px;
-  color: black;
+  color: var(--custom-dark-grey);
   font-size: 0.9rem;
 }
 
 
 header .h-user-menu {
-  color: black;
+  color: var(--custom-dark-grey);
 }
 
 
@@ -241,4 +242,73 @@ header a:hover {
 
   display: grid;
   justify-items: center;
+}
+
+/* DEPLOY SECT _________________________ */
+.deploy {
+  /* background-color: hotpink; */
+  display: grid;
+  place-items: center;
+}
+
+.deploy h3 {
+  margin-top: 40px;
+  color: var(--custom-dark-grey)
+  font-weight: 750;
+}
+
+.deploy p {
+  color: var(--custom-grey);
+  padding-top: 10px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  
+  word-wrap: break-word;
+  max-width: 60%;
+}
+
+.deploy ul {
+  /* background-color:khaki; */
+  padding: 10px ;
+  list-style-type:none;
+  border: 3px solid var(--custom-grey) ;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.deploy ul li {
+  padding-bottom: 10px;
+}
+
+.deploy .container {
+  /* background-color: rgba(134, 248, 248, 0.671); */
+  /* max-width: 850px; */
+
+  display: grid;
+  grid-template-columns: 6fr 9fr;
+  place-items: center;
+}
+
+.deploy .details {
+  /* background-color: rgba(11, 128, 0, 0.671); */
+  display: grid;
+  grid-template-columns: repeat(2, 0.5fr);
+  gap: 10px;
+}
+
+.details .item {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.details .item h4 {
+  font-size: 0.9rem;
+  padding-bottom: 5px;
+}
+
+.details .item p {
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: var(--custom-grey);
 }
