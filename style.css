@@ -7,20 +7,63 @@
 
 html {
 --custom-blue: #006aff;
---custom-grey: #5b6987;
---custom-transp-grey: #5b69871a;
---custom-dark-grey: rgb(54, 53, 53)
+--custom-grey: #7e8ca8;
+--custom-transp-grey: #5b698728;
+--custom-dark-grey: rgb(38, 44, 94);
 
 }
 
 body {
   margin: 20px 0px;
   display: grid;
+  /* background-color: rgb(49, 50, 58); */
+}
+
+.mcs {
+  margin-left: 15px;
+  color: var(--custom-dark-grey);
+  font-size: 0.9rem;
+}
+
+.mt-c-fw {
+  margin-top: 40px;
+  color: var(--custom-dark-grey);
+  font-weight: 750;
+}
+
+.grey-p {
+  color: var(--custom-grey);
+  max-width: 60%;
+
+  padding-top: 10px;
+  margin-bottom: 20px;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.mini-title-style {
+  font-size: 0.9rem;
+  padding: 10px 0;
+  color: var(--custom-dark-grey);
+}
+
+.mini-p-style {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--custom-grey);
+}
+
+.blue-link a {
+  color: var(--custom-blue);
+  margin-bottom: 40px;
+  font-size: 0.7rem;
+  font-weight: bold;
 }
 
 /* HEADER________________________________________________ */
 /* dropdown buttons style in -> dropdown.css  */
-
 header {
   height: 50px;
   /* background-color: yellow; */
@@ -40,14 +83,6 @@ header h-logo {
 header .h-logo img{
   width: 200px;
 }
-
-
-.mcs {
-  margin-left: 15px;
-  color: var(--custom-dark-grey);
-  font-size: 0.9rem;
-}
-
 
 header .h-user-menu {
   color: var(--custom-dark-grey);
@@ -235,36 +270,16 @@ header a:hover {
 }
 
 .partnerships a {
-  color: var(--custom-blue);
-  margin-bottom: 40px;
-  font-size: 0.8rem;
-  font-weight: bold;
-
   display: grid;
   justify-items: center;
 }
 
-/* DEPLOY SECT _________________________ */
+/* DEPLOY SECT __________________________________________ */
 .deploy {
   /* background-color: hotpink; */
   display: grid;
   place-items: center;
-}
-
-.deploy h3 {
-  margin-top: 40px;
-  color: var(--custom-dark-grey)
-  font-weight: 750;
-}
-
-.deploy p {
-  color: var(--custom-grey);
-  padding-top: 10px;
-  margin-bottom: 20px;
-  font-size: 0.9rem;
-  
-  word-wrap: break-word;
-  max-width: 60%;
+  /* grid-template-rows: 40px; */
 }
 
 .deploy ul {
@@ -283,10 +298,8 @@ header a:hover {
 
 .deploy .container {
   /* background-color: rgba(134, 248, 248, 0.671); */
-  /* max-width: 850px; */
-
   display: grid;
-  grid-template-columns: 6fr 9fr;
+  grid-template-columns: 3fr 5fr;
   place-items: center;
 }
 
@@ -302,13 +315,61 @@ header a:hover {
   padding: 20px;
 }
 
-.details .item h4 {
-  font-size: 0.9rem;
-  padding-bottom: 5px;
+/* DESIGNED FOR SECT____________________________  */
+.designed-for {
+  background-color: var(--custom-transp-grey);
+  display: grid;
+  place-items: center;
+  
+  gap: 10px;
 }
 
-.details .item p {
-  font-size: 0.6rem;
-  font-weight: 600;
-  color: var(--custom-grey);
+.designed-for img {
+  width: 500px;
 }
+
+.designed-for figcaption {
+  color: var(--custom-dark-grey);
+  margin-bottom: 30px;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* FEATURES SECT______________________________________  */
+
+.features {
+  display: grid;
+  
+  grid-template: 
+  ". h h h ." 80px 
+  ". a b c ." 1fr /
+  1fr 1fr 1fr 1fr 1fr;
+
+  place-items: center;
+  gap: 40px;
+}
+
+.features h3 {
+  grid-area: h;
+}
+
+.features .a {
+  grid-area: a;
+}
+
+.features .b {
+  grid-area: b;
+}
+
+.features .c {
+  grid-area: c;
+}
+
+
+
+/* .features .wrapper {
+  display: grid;
+  place-items: center;
+  grid-auto-flow: column;
+} */
