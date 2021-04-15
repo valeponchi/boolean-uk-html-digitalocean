@@ -37,7 +37,7 @@
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #9fc6fca6;
+  background-color: #38a4e7ad;
   border-radius: 10px;
   color: #fff;
 }
@@ -45,7 +45,7 @@
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
-  background-color: #006affda;
+  background-color: #7cadf3da;
   border-radius: 10px;
 
 }
